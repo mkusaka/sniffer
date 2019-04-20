@@ -1,0 +1,12 @@
+{
+  "sniffer": {
+    "implementation": "<path to shared object>",
+    "settings": {
+    }
+  },
+  "notifier": {
+    "implementation": "<path to shared object>",
+    "settings": {
+    }
+  }
+}
