@@ -1,0 +1,10 @@
+version: '3'
+services:
+  main:
+    build: .
+    volumes:
+    - ./src:/home/src
+    entrypoint:
+      - tail
+      - -f
+      - /dev/null
