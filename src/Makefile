@@ -20,6 +20,7 @@ LDFLAGS = \
 LDLIBS = \
 				-lboost_program_options \
 				-ldl \
+				-pthread \
 				-llog4cpp \
 
 CXXSRC = \
