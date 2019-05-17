@@ -1,5 +1,5 @@
 FROM centos:centos7
 
-RUN yum install -y gcc gcc-c++ make log4cpp boost boost-devel epel-release && yum -y --enablerepo=epel install log4cpp log4cpp-devel
+RUN yum install -y gcc gcc-c++ make log4cpp boost boost-devel epel-release && yum -y --enablerepo=epel install log4cpp log4cpp-devel libcurl libcurl-devel
 
 WORKDIR /home/src/
