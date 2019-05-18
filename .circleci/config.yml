@@ -2,21 +2,23 @@ version: 2
 jobs:
   test:
     docker:
-      - image: mkusaka/sniffer_dev:latest
+      - image: mkusaka/sniffer_dev:2019-05-18
     steps:
       - checkout
       - run:
           name: build sninffer
-          command: make
+          command: |
+              cd src
+              make
       - run:
           name: build notifier
           command: |
-              cd notifiers/slack_notifier
+              cd src/notifiers/slack_notifier
               make
       - run:
           name: build log plugin
           command: |
-              cd sniffers/log_sniffer
+              cd src/sniffers/log_sniffer
               make
 
 workflows:
