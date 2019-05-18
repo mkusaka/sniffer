@@ -1,7 +1,7 @@
 version: '3'
 services:
   main:
-    build: .
+    image: mkusaka/sniffer_dev:latest
     volumes:
     - ./src:/home/src
     entrypoint:
